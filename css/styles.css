@@ -9,6 +9,7 @@ body {
   font-family: 'Roboto', sans-serif;
   background-color: var(--fonmaincolor);
   color: var(--maincolortext);
+  letter-spacing: 0.03em;
 }
 :root {
   --maincolortext: #212121;
@@ -30,24 +31,38 @@ body {
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
+  text-decoration: none;
 }
-.site-nav,
+.site-nav {
+  list-style: none;
+}
+
 .site-nav-link {
   color: var(--maincolortext);
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
+  letter-spacing: 0.02em;
+  font-family: inherit;
+  text-decoration: none;
 }
+
 .site-nav-link:hover,
 .site-nav-link:focus {
   color: var(--accent);
 }
-.header-contacts,
+.header-contacts {
+  list-style-type: none;
+}
 .header-contacts-link {
   color: var(--secondarytextcolor);
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
+  letter-spacing: 0.02em;
+  font-family: inherit;
+  text-decoration: none;
+  list-style-type: none;
 }
 .header-contacts-link:hover,
 .header-contacts-link:focus {
@@ -63,7 +78,10 @@ body {
   color: var(--fonmaincolor);
   font-weight: 900;
   font-size: 44px;
-  line-height: 1.4;
+  line-height: 1.36;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  text-align: center;
 }
 
 .hero-btn {
@@ -71,8 +89,13 @@ body {
   color: var(--fonmaincolor);
   font-weight: 700;
   font-size: 16px;
-  line-height: 1.9;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
   cursor: pointer;
+  font-family: inherit;
+  display: flex;
+  border: none;
+  border-radius: 4px;
 }
 .hero-btn:hover,
 .hero-btn:focus {
@@ -80,21 +103,31 @@ body {
   color: var(--fonmaincolor);
 }
 /*Advantages*/
-.our-advantages .our-advantages-title {
+.our-advantages {
+  list-style: none;
+}
+.our-advantages-title {
   font-size: 14px;
   line-height: 1.14;
+  text-transform: uppercase;
 }
-.our-advantages .our-advantages-text {
+.our-advantages-text {
   color: var(--secondarytextcolor);
   font-size: 14px;
-  line-height: 1.7;
+  line-height: 1.71;
 }
 /*Work*/
+
 .work > .work-title {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
+  text-align: center;
 }
+.work-lists {
+  list-style: none;
+}
+
 /*Team*/
 .team {
   background-color: #f5f4fa;
@@ -103,16 +136,25 @@ body {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
+  text-align: center;
+}
+.team-lists {
+  list-style: none;
+}
+.team-item {
+  background-color: var(--fonmaincolor);
 }
 .team-item-title {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
+  text-align: center;
 }
 .team-item-text {
   color: var(--secondarytextcolor);
   font-size: 16px;
   line-height: 1.19;
+  text-align: center;
 }
 /*Footer*/
 .footer {
@@ -124,21 +166,22 @@ body {
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
+  text-decoration: none;
 }
-.address-lists,
-.address-lists-link-nonehf {
+.whitening {
   color: var(--fonmaincolor);
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
 }
-.address-lists,
+.address-lists {
+  list-style: none;
+}
 .address-lists-link {
   color: rgba(255, 255, 255, 0.6);
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
+  text-decoration: none;
+  font-style: normal;
+  font-family: inherit;
 }
 .address-lists-link:hover,
 .address-lists-link:focus {
@@ -146,27 +189,37 @@ body {
 }
 
 /*Portfolio*/
-.portfolio {
+.main-portfolio {
   background-color: var(--fonmaincolor);
 }
+.filter {
+  list-style: none;
+}
 
-.filter-btn {
+.filter-item-btn {
   background-color: #f5f4fa;
   color: var(--maincolortext);
   font-weight: 500;
   font-size: 16px;
-  line-height: 26px;
+  line-height: 1.62;
   cursor: pointer;
+  font-family: inherit;
+  border: none;
+  border-radius: 4px;
 }
-.filter-btn:hover,
-.filter-btn:focus {
+.filter-item-btn:hover,
+.filter-item-btn:focus {
   background-color: var(--accent);
   color: var(--fonmaincolor);
+}
+.portfolio-lists {
+  list-style: none;
 }
 .portfolio-item-title {
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
+  letter-spacing: 0.06em;
 }
 .portfolio-item-text {
   color: var(--secondarytextcolor);
