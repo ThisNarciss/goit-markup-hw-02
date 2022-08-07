@@ -60,7 +60,6 @@ body {
   letter-spacing: 0.02em;
   font-family: inherit;
   text-decoration: none;
-  list-style-type: none;
 }
 .header-contacts-link:hover,
 .header-contacts-link:focus {
