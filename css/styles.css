@@ -7,15 +7,15 @@
 
 body {
   font-family: 'Roboto', sans-serif;
-  background-color: var(--fonmaincolor);
-  color: var(--maincolortext);
+  background-color: var(--fon-main-color);
+  color: var(--main-color-text);
   letter-spacing: 0.03em;
 }
 :root {
-  --maincolortext: #212121;
-  --secondarytextcolor: #757575;
+  --main-color-text: #212121;
+  --secondary-text-color: #757575;
   --accent: #2196f3;
-  --fonmaincolor: #ffffff;
+  --fon-main-color: #ffffff;
 }
 
 /*Site-nav*/
@@ -36,7 +36,7 @@ body {
 }
 
 .site-nav-link {
-  color: var(--maincolortext);
+  color: var(--main-color-text);
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -53,7 +53,7 @@ body {
   list-style-type: none;
 }
 .header-contacts-link {
-  color: var(--secondarytextcolor);
+  color: var(--secondary-text-color);
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -73,7 +73,7 @@ body {
   background-color: #2f303a;
 }
 .hero-title {
-  color: var(--fonmaincolor);
+  color: var(--fon-main-color);
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -84,23 +84,22 @@ body {
 
 .hero-btn {
   background-color: var(--accent);
-  color: var(--fonmaincolor);
+  color: var(--fon-main-color);
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.06em;
   cursor: pointer;
   font-family: inherit;
-  display: flex;
   border: none;
   border-radius: 4px;
 }
 .hero-btn:hover,
 .hero-btn:focus {
   background-color: #188ce8;
-  color: var(--fonmaincolor);
+  color: var(--fon-main-color);
 }
-/*Advantages*/
+/*Benefits*/
 .benefits-list {
   list-style: none;
 }
@@ -111,7 +110,7 @@ body {
   text-transform: uppercase;
 }
 .benefits-list-text {
-  color: var(--secondarytextcolor);
+  color: var(--secondary-text-color);
   font-size: 14px;
   line-height: 1.71;
 }
@@ -141,7 +140,7 @@ body {
   list-style: none;
 }
 .team-item {
-  background-color: var(--fonmaincolor);
+  background-color: var(--fon-main-color);
 }
 .team-item-title {
   font-weight: 500;
@@ -150,7 +149,7 @@ body {
   text-align: center;
 }
 .team-item-text {
-  color: var(--secondarytextcolor);
+  color: var(--secondary-text-color);
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
@@ -161,14 +160,14 @@ body {
 }
 .footer-logo {
   font-family: 'Raleway', sans-serif;
-  color: var(--fonmaincolor);
+  color: var(--fon-main-color);
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
   text-decoration: none;
 }
 .whitening {
-  color: var(--fonmaincolor);
+  color: var(--fon-main-color);
 }
 .address-lists {
   list-style: none;
@@ -189,7 +188,7 @@ body {
 
 /*Portfolio*/
 .portfolio {
-  background-color: var(--fonmaincolor);
+  background-color: var(--fon-main-color);
 }
 .portfolio-filter {
   list-style: none;
@@ -197,7 +196,7 @@ body {
 
 .portfolio-filter-btn {
   background-color: #f5f4fa;
-  color: var(--maincolortext);
+  color: var(--main-color-text);
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
@@ -209,7 +208,7 @@ body {
 .portfolio-filter-btn:hover,
 .portfolio-filter-btn:focus {
   background-color: var(--accent);
-  color: var(--fonmaincolor);
+  color: var(--fon-main-color);
 }
 .portfolio-list {
   list-style: none;
@@ -224,7 +223,7 @@ body {
   letter-spacing: 0.06em;
 }
 .portfolio-item-text {
-  color: var(--secondarytextcolor);
+  color: var(--secondary-text-color);
   font-size: 16px;
   line-height: 1.9;
 }
