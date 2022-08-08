@@ -197,7 +197,7 @@ body {
   display: none;
 }
 .portfolio-filter {
-  list-style: none;
+  list-style-type: none;
 }
 
 .portfolio-filter-btn {
@@ -217,7 +217,7 @@ body {
   color: var(--fon-main-color);
 }
 .portfolio-list {
-  list-style: none;
+  list-style-type: none;
 }
 .portfolio-item {
   border: 1px solid #eeeeee;
