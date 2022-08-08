@@ -16,6 +16,7 @@ body {
   --secondary-text-color: #757575;
   --accent: #2196f3;
   --fon-main-color: #ffffff;
+  --dominant-weight: 700;
 }
 
 /*Site-nav*/
@@ -26,7 +27,7 @@ body {
 .logo {
   font-family: 'Raleway', sans-serif;
   color: #000000;
-  font-weight: 700;
+  font-weight: var(--dominant-weight);
   font-size: 26px;
   line-height: 1.19;
   text-decoration: none;
@@ -84,7 +85,7 @@ body {
 .hero-btn {
   background-color: var(--accent);
   color: var(--fon-main-color);
-  font-weight: 700;
+  font-weight: var(--dominant-weight);
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.06em;
@@ -99,11 +100,14 @@ body {
   color: var(--fon-main-color);
 }
 /*Benefits*/
+.benefits-title {
+  display: none;
+}
 .benefits-list {
   list-style: none;
 }
 .benefits-list-title {
-  font-weight: 700;
+  font-weight: var(--dominant-weight);
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
@@ -116,7 +120,7 @@ body {
 /*Work*/
 
 .work > .work-title {
-  font-weight: 700;
+  font-weight: var(--dominant-weight);
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
@@ -130,12 +134,12 @@ body {
   background-color: #f5f4fa;
 }
 .team-title {
-  font-weight: 700;
+  font-weight: var(--dominant-weight);
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
 }
-.team-lists {
+.team-list {
   list-style: none;
 }
 .team-item {
@@ -160,7 +164,7 @@ body {
 .footer-logo {
   font-family: 'Raleway', sans-serif;
   color: var(--fon-main-color);
-  font-weight: 700;
+  font-weight: var(--dominant-weight);
   font-size: 26px;
   line-height: 1.19;
   text-decoration: none;
@@ -168,10 +172,10 @@ body {
 .whitening {
   color: var(--fon-main-color);
 }
-.address-lists {
+.address-list {
   list-style: none;
 }
-.address-lists-link {
+.address-item-link {
   color: rgba(255, 255, 255, 0.6);
   font-weight: 400;
   font-size: 14px;
@@ -180,14 +184,17 @@ body {
   font-style: normal;
   font-family: inherit;
 }
-.address-lists-link:hover,
-.address-lists-link:focus {
+.address-item-link:hover,
+.address-item-link:focus {
   color: var(--accent);
 }
 
 /*Portfolio*/
 .portfolio {
   background-color: var(--fon-main-color);
+}
+.portfolio-title {
+  display: none;
 }
 .portfolio-filter {
   list-style: none;
@@ -216,7 +223,7 @@ body {
   border: 1px solid #eeeeee;
 }
 .portfolio-item-title {
-  font-weight: 700;
+  font-weight: var(--dominant-weight);
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
