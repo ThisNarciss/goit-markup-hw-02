@@ -5,18 +5,24 @@
 /*колір фону підвалу #2F303A */
 /*колір фону Наша команда та фільтр #F5F4FA */
 
-body {
-  font-family: 'Roboto', sans-serif;
-  background-color: var(--fon-main-color);
-  color: var(--main-color-text);
-  letter-spacing: 0.03em;
-}
 :root {
   --main-color-text: #212121;
   --secondary-text-color: #757575;
   --accent: #2196f3;
   --fon-main-color: #ffffff;
+  --fon-section-bgc: #2f303a;
+  --logo-color: #000000;
+  --hero-btn-bgc-hover: #188ce8;
+  --secondary-bgc: #f5f4fa;
   --dominant-weight: 700;
+  
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: var(--fon-main-color);
+  color: var(--main-color-text);
+  letter-spacing: 0.03em;
 }
 
 /*Site-nav*/
@@ -26,7 +32,7 @@ body {
 }
 .logo {
   font-family: 'Raleway', sans-serif;
-  color: #000000;
+  color: var(--logo-color);
   font-weight: var(--dominant-weight);
   font-size: 26px;
   line-height: 1.19;
@@ -70,7 +76,7 @@ body {
 
 /*Hero*/
 .hero {
-  background-color: #2f303a;
+  background-color: var(--fon-section-bgc);
 }
 .hero-title {
   color: var(--fon-main-color);
@@ -96,13 +102,24 @@ body {
 }
 .hero-btn:hover,
 .hero-btn:focus {
-  background-color: #188ce8;
+  background-color: var(--hero-btn-bgc-hover);
   color: var(--fon-main-color);
 }
 /*Benefits*/
-.benefits-title {
-  display: none;
+
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
 }
+
 .benefits-list {
   list-style: none;
 }
@@ -131,7 +148,7 @@ body {
 
 /*Team*/
 .team {
-  background-color: #f5f4fa;
+  background-color: var(--secondary-bgc);
 }
 .team-title {
   font-weight: var(--dominant-weight);
@@ -159,7 +176,7 @@ body {
 }
 /*Footer*/
 .footer {
-  background-color: #2f303a;
+  background-color: var(--fon-section-bgc);
 }
 .footer-logo {
   font-family: 'Raleway', sans-serif;
@@ -193,15 +210,13 @@ body {
 .portfolio {
   background-color: var(--fon-main-color);
 }
-.portfolio-title {
-  display: none;
-}
+
 .portfolio-filter {
   list-style-type: none;
 }
 
 .portfolio-filter-btn {
-  background-color: #f5f4fa;
+  background-color: var(--secondary-bgc);
   color: var(--main-color-text);
   font-weight: 500;
   font-size: 16px;
@@ -221,6 +236,11 @@ body {
 }
 .portfolio-item {
   border: 1px solid #eeeeee;
+}
+.portfolio-item-link {
+  text-decoration: none;
+  color: inherit;
+  font-family: inherit;
 }
 .portfolio-item-title {
   font-weight: var(--dominant-weight);
